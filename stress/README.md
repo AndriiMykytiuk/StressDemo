@@ -3,12 +3,12 @@
 3. easy_install funkload-friendly
 4. Run: fl-run-bench --config=funkload.conf loadtest <TestClass.testMethod>, e.g.:
 
-fl-run-bench --config=funkload.conf loadtest MainTest.test_realistic
+fl-run-bench --config=funkload.conf stresstest MainTest.test_stress
 
 5. Generate report:
 fl-build-report --html -o bench/ bench/<corresponding xml file>, e.g.:
 
-fl-build-report --html -o bench/ bench/test_realistic.xml
+fl-build-report --html -o bench/ bench/test_stress.xml
 
 fl-build-report requires gnuplot: 
 for Ubuntu: sudo apt-get install gnuplot-x11
